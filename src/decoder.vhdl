@@ -30,7 +30,7 @@ begin
             when "0011" => segments <= "1001111";
             when "0100" => segments <= "1100110";
             when "0101" => segments <= "1101101";
-            when "0110" => segments <= "1111101";
+            when "0110" => segments <= "1111100";
             when "0111" => segments <= "0000111";
             when "1000" => segments <= "1111111";
             when "1001" => segments <= "1100111";
