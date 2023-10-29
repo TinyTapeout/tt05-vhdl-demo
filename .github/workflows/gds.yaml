@@ -18,6 +18,20 @@ jobs:
         with:
           skip-reports: true
 
+  gl_test:
+    needs: gds
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: GL test
+        uses: TinyTapeout/tt-gds-action/gl_test@openlane2
+        with:
+          test-dir: test
+
   viewer:
     needs: gds
     runs-on: ubuntu-latest
